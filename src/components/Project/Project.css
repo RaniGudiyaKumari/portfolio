@@ -1,0 +1,47 @@
+.Project__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:2rem
+}
+
+.Project__item {
+    background: var(--color-bg-varient);
+    padding:2.4rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.Project__items:hover {
+    border-color: var(--color-primary-varient);
+    background: transparent;
+}
+
+.Project__item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.Project__item h3 {
+    margin: 1rem 1rem;
+}
+
+.Project__item-cta {
+    display: flex;
+    gap:1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:1024px) {
+    .Project__container {
+        grid-template-columns: 1rf 1rf;
+        gap:1rem
+    }
+}
+
+@media screen and (max-width:600px) {
+    .Project__container {
+        grid-template-columns: 1fr;
+        gap:1rem;
+    }
+}
